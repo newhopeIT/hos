@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Full Page with Padding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container {
+            padding: 30px;
+        }
+
+        img {
+            max-width: calc(100vw - 60px); /* 30px padding on both sides */
+            max-height: calc(100vh - 60px); /* 30px padding on both sides */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+              <img src="images/sampleflyer.jpg" alt="Drone Flyer">
+    </div>
+</body>
+</html>
